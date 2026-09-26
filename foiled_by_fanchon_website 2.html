@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foiled by Fanchon | Hair Color & Beauty</title>
+<style>
+  :root{
+    --ink:#24211f;
+    --muted:#746d68;
+    --cream:#f7f3ee;
+    --warm:#e9ddd2;
+    --rose:#c9a99c;
+    --white:#fffdfb;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+  a{text-decoration:none;color:inherit}
+  .nav{
+    position:sticky;top:0;z-index:20;background:rgba(255,253,251,.94);
+    backdrop-filter:blur(12px);border-bottom:1px solid #eee7e1;
+    display:flex;justify-content:space-between;align-items:center;padding:18px 7%;
+  }
+  .logo{font-family:Georgia,serif;letter-spacing:2px;font-size:20px}
+  .links{display:flex;gap:28px;font-size:14px}
+  .btn{display:inline-block;background:var(--ink);color:white;padding:13px 22px;border-radius:2px;font-size:13px;letter-spacing:.8px}
+  .hero{
+    min-height:78vh;display:grid;grid-template-columns:1.05fr .95fr;
+    background:var(--cream);
+  }
+  .hero-copy{padding:10% 9%;display:flex;flex-direction:column;justify-content:center}
+  .eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--muted)}
+  h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(54px,7vw,92px);line-height:.95;margin:20px 0}
+  .hero-copy p{max-width:500px;color:var(--muted);font-size:17px}
+  .hero-image{
+    min-height:620px;
+    background:
+      linear-gradient(135deg,rgba(30,25,22,.08),rgba(30,25,22,.3)),
+      url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=85")
+      center/cover;
+  }
+  section{padding:90px 8%}
+  .intro{display:grid;grid-template-columns:1fr 1.4fr;gap:8%;align-items:center}
+  h2{font-family:Georgia,serif;font-size:48px;font-weight:400;line-height:1.05;margin:0 0 20px}
+  .intro p{color:var(--muted);font-size:17px}
+  .services{background:var(--cream)}
+  .section-head{text-align:center;max-width:680px;margin:0 auto 50px}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:white;padding:34px;min-height:220px;border:1px solid #eee6df}
+  .card span{font-size:12px;letter-spacing:2px;color:var(--rose)}
+  .card h3{font-family:Georgia,serif;font-size:27px;font-weight:400;margin:14px 0}
+  .card p{color:var(--muted)}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .gallery div{height:360px;background-size:cover;background-position:center}
+  .g1{background-image:url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=85")}
+  .g2{background-image:url("https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=85")}
+  .g3{background-image:url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=85")}
+  .cta{background:var(--ink);color:white;text-align:center}
+  .cta p{color:#d7d0cb;max-width:620px;margin:0 auto 28px}
+  .cta .btn{background:white;color:var(--ink)}
+  .contact{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+  .contact-box{background:var(--cream);padding:38px}
+  .contact-box p{color:var(--muted);margin:7px 0}
+  footer{padding:28px 8%;border-top:1px solid #eee7e1;color:var(--muted);font-size:13px;display:flex;justify-content:space-between}
+  @media(max-width:800px){
+    .links{display:none}.hero{grid-template-columns:1fr}.hero-image{min-height:420px;grid-row:1}
+    .hero-copy{padding:70px 8%}.intro,.contact{grid-template-columns:1fr}.cards,.gallery{grid-template-columns:1fr}
+    section{padding:70px 7%}h2{font-size:40px}.gallery div{height:420px}
+  }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="logo">FOILED BY FANCHON</div>
+  <div class="links">
+    <a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+  </div>
+  <a class="btn" href="#contact">BOOK</a>
+</nav>
+
+<header class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">Trophy Club, Texas</div>
+    <h1>Color made<br>personal.</h1>
+    <p>Thoughtful hair color, dimensional blonding, cuts and extensions designed around your hair, your style and the look you want to live in.</p>
+    <div style="margin-top:22px"><a class="btn" href="#contact">BOOK AN APPOINTMENT</a></div>
+  </div>
+  <div class="hero-image" aria-label="Hair salon image"></div>
+</header>
+
+<section id="about">
+  <div class="intro">
+    <div>
+      <div class="eyebrow">The Fanchon experience</div>
+      <h2>Beautiful hair without the cookie-cutter feel.</h2>
+    </div>
+    <div>
+      <p>Foiled by Fanchon is a Trophy Club hair studio focused on personalized color and polished, wearable results. Every appointment starts with understanding your goals so your color and cut fit your lifestyle—not just a trend.</p>
+      <p>Whether you're refreshing your blonde, adding dimension, changing your color or looking for a fresh cut, the goal is simple: hair you love leaving the salon with.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="section-head">
+    <div class="eyebrow">Services</div>
+    <h2>Made for your hair goals.</h2>
+    <p>Service names and pricing can be customized to match Fanchon's current booking menu.</p>
+  </div>
+  <div class="cards">
+    <div class="card"><span>01</span><h3>Custom Color</h3><p>Personalized color designed around your current hair, desired result and maintenance routine.</p></div>
+    <div class="card"><span>02</span><h3>Blonding & Highlights</h3><p>Foil work and dimensional techniques for bright, blended and natural-looking results.</p></div>
+    <div class="card"><span>03</span><h3>Cuts & Styling</h3><p>Polished cuts and finishing tailored to your texture, shape and everyday routine.</p></div>
+    <div class="card"><span>04</span><h3>Extensions</h3><p>Added length, fullness or both, customized to complement your color and desired look.</p></div>
+    <div class="card"><span>05</span><h3>Color Refresh</h3><p>Keep your color looking fresh between bigger transformation appointments.</p></div>
+    <div class="card"><span>06</span><h3>Consultation</h3><p>Not sure what to book? Start with a consultation and build a plan together.</p></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="section-head">
+    <div class="eyebrow">The work</div>
+    <h2>Color, dimension & confidence.</h2>
+  </div>
+  <div class="gallery">
+    <div class="g1"></div><div class="g2"></div><div class="g3"></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="eyebrow" style="color:#c9a99c">Ready for your next look?</div>
+  <h2>Let's make a plan for your hair.</h2>
+  <p>Use the booking button to connect this site to Foiled by Fanchon's current appointment system.</p>
+  <a class="btn" href="#contact">BOOK YOUR APPOINTMENT</a>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <div>
+      <div class="eyebrow">Visit</div>
+      <h2>Foiled by Fanchon</h2>
+      <p style="color:var(--muted)">301 Trophy Lake Dr<br>Trophy Club, TX</p>
+    </div>
+    <div class="contact-box">
+      <div class="eyebrow">Appointments</div>
+      <h3 style="font-family:Georgia,serif;font-size:28px;font-weight:400">Ready to book?</h3>
+      <p>Replace the button below with Fanchon's verified booking URL before publishing.</p>
+      <a class="btn" href="https://book.squareup.com/" target="_blank" rel="noopener">BOOK NOW</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 Foiled by Fanchon</div>
+  <div>Trophy Club, Texas</div>
+</footer>
+</body>
+</html>
